@@ -1,0 +1,5 @@
+#!/bin/tcsh -f
+
+echo "$argv[1]'s Census"
+cat /user/cse325/Projects/project02.headers
+grep "| $argv[1]" /user/cse325/Projects/project02.data | sort -t "|" -k3,3n -k2,2
